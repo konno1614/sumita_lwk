@@ -2,7 +2,6 @@ import Fix_Nav from './lib/Fix-Nav'
 import Nav from './lib/Sp-Nav'
 import PageTop from './lib/Page-Top'
 import Swiper from './lib/Swiper'
-import Wave from './lib/Wave'
 import Fadein from './lib/Fadein'
 
 $(function() {

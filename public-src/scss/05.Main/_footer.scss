@@ -1,9 +1,25 @@
 .o-footer {
+    position: relative;
     color: $color-white;
-    background-color: $color-blue;
-    padding-bottom: 30px;
+    background-color: $color-green;
+    padding: 50px 0 25px;
     @media #{$media-smp} {
-        padding-bottom: 15px;
+        padding: 25px 0 10px;
+    }
+    &::before {
+        content: '';
+        transform: rotate(180deg);
+        position: absolute;
+        top: -40px;
+        right: 0;
+        left: 0%;
+        z-index: 10;
+        display: block;
+        height: 40px;
+        background-size: 40px 15px;
+        background-repeat: repeat-x;
+        background-position: 0 0;
+        background-image: url(../img/common/bg-triangle_green.png);
     }
     &__inner {
         display: flex;

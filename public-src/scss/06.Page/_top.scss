@@ -8,7 +8,7 @@
             margin-top: 15px;
         }
         a {
-            color: $color-orange;
+            color: $color-red;
         }
     }
     &__common-image {
@@ -30,7 +30,7 @@
             display: inline-block;
             width: 30px;
             height: 3px;
-            background-color: $color-blue;
+            background-color: $color-green;
             @media #{$media-tablet} {
                 width: 20px;
             }
@@ -79,7 +79,7 @@
                 font-size: 1.8rem;
             }
             &.blue {
-                color: $color-blue;
+                color: $color-green;
                 font-size: 3.6rem;
                 @media #{$media-smp} {
                     font-size: 2.2rem;
@@ -89,7 +89,7 @@
                 }
             }
             &.orange {
-                color: $color-orange;
+                color: $color-red;
                 font-size: 3.6rem;
                 @media #{$media-smp} {
                     font-size: 2.2rem;
@@ -234,7 +234,7 @@
                 width: 17%;
                 height: 65px;
                 border-radius: 5px;
-                border: 2px solid $color-blue;
+                border: 2px solid $color-green;
                 font-size: 1.8rem;
                 display: flex;
                 align-items: center;
@@ -260,7 +260,7 @@
                 top: 30px;
                 text-align: center;
                 width: 24.5%;
-                border-top: 2px solid $color-blue;
+                border-top: 2px solid $color-green;
                 @media #{$media-smp} {
                     width: 100%;
                     border-top: none;
@@ -274,7 +274,7 @@
                         display: block;
                         width: 2px;
                         height: 20px;
-                        background-color: $color-blue;
+                        background-color: $color-green;
                     }
                 }
                 &.text01 {
@@ -395,7 +395,7 @@
                 }
                 .period {
                     margin: 25px auto 0;
-                    background-color: $color-blue;
+                    background-color: $color-green;
                     border-radius: 5px;
                     color: $color-white;
                     display: flex;
@@ -424,7 +424,7 @@
                     }
                     li {
                         font-size: 1.4rem;
-                        border: 2px solid $color-blue;
+                        border: 2px solid $color-green;
                         border-radius: 5px;
                         padding: 10px 15px;
                         &+li {
@@ -439,7 +439,7 @@
                                 font-weight: $font-bold;
                             }
                             &.orange {
-                                color: $color-orange;
+                                color: $color-red;
                             }
                         }
                         &.asterisk {
@@ -466,8 +466,8 @@
                 top: 20px;
                 width: 40px;
                 height: 40px;
-                border-top: 5px solid $color-blue;
-                border-right: 5px solid $color-blue;
+                border-top: 5px solid $color-green;
+                border-right: 5px solid $color-green;
                 transform: rotate(45deg);
                 @media #{$media-tablet} {
                     width: 25px;

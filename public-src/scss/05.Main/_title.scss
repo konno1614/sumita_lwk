@@ -4,10 +4,14 @@
     font-size: 3.0rem;
     font-weight: $font-bold;
     margin-bottom: 50px;
+    color: $color-white;
     @media #{$media-smp} {
         font-size: 2.0rem;
         line-height: 1.2;
         margin-bottom: 30px;
+    }
+    span {
+        color: $color-white;
     }
     br {
         display: none;
@@ -27,22 +31,10 @@
     }
     &--black {
         color: $color-black;
-        text-shadow:0 0 4px $color-white,0 0 4px $color-white,0 0 4px $color-white,0 0 4px $color-white,0 0 4px $color-white,0 0 4px $color-white,0 0 4px $color-white,0 0 4px $color-white,0 0 4px $color-white,0 0 4px $color-white,0 0 4px $color-white,0 0 4px $color-white,0 0 4px $color-white,0 0 4px $color-white,0 0 4px $color-white,0 0 4px $color-white;
         @media #{$media-smp} {
-            text-shadow:0 0 2px $color-white,0 0 2px $color-white,0 0 2px $color-white,0 0 2px $color-white,0 0 2px $color-white,0 0 2px $color-white,0 0 2px $color-white,0 0 2px $color-white,0 0 2px $color-white,0 0 2px $color-white,0 0 2px $color-white,0 0 2px $color-white,0 0 2px $color-white,0 0 2px $color-white,0 0 2px $color-white,0 0 2px $color-white;
         }
         span {
-            color: $color-white;
-        }
-    }
-    &--white {
-        color: $color-white;
-        text-shadow:0 0 4px $color-blue,0 0 4px $color-blue,0 0 4px $color-blue,0 0 4px $color-blue,0 0 4px $color-blue,0 0 4px $color-blue,0 0 4px $color-blue,0 0 4px $color-blue,0 0 4px $color-blue,0 0 4px $color-blue,0 0 4px $color-blue,0 0 4px $color-blue,0 0 4px $color-blue,0 0 4px $color-blue,0 0 4px $color-blue,0 0 4px $color-blue;
-        @media #{$media-smp} {
-            text-shadow:0 0 2px $color-blue,0 0 2px $color-blue,0 0 2px $color-blue,0 0 2px $color-blue,0 0 2px $color-blue,0 0 2px $color-blue,0 0 2px $color-blue,0 0 2px $color-blue,0 0 2px $color-blue,0 0 2px $color-blue,0 0 2px $color-blue,0 0 2px $color-blue,0 0 2px $color-blue,0 0 2px $color-blue,0 0 2px $color-blue,0 0 2px $color-blue;
-        }
-        span {
-            color: $color-blue;
+            color: $color-black;
         }
     }
 }

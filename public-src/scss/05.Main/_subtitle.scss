@@ -26,7 +26,7 @@
             color: #3562d6;
         }
         &.orange {
-            color: $color-orange;
+            color: $color-red;
         }
     }
     &--white {
@@ -38,7 +38,7 @@
     &--black {
         color: $color-black;
         &::after {
-            background-color: $color-blue;
+            background-color: $color-green;
         }
     }
 }
