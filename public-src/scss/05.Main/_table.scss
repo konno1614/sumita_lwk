@@ -1,0 +1,77 @@
+.o-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 6px;
+    font-size: 1.4rem;
+    @media #{$media-smp} {
+        border-collapse: collapse;
+    }
+    th {
+        font-weight: $font-mideum;
+        text-align: center;
+        width: 30%;
+        background-color: rgba($color: $color-darkyellow, $alpha: 1.0);
+        padding: 10px;
+        @media #{$media-smp} {
+            display: block;
+            width: 100%;
+            border-top: 6px solid $color-blue;
+        }
+    }
+    td {
+        width: 70%;
+        background-color: rgba($color: $color-white, $alpha: 1.0);
+        padding: 10px;
+        color: $color-black;
+        letter-spacing: 1px;
+        @media #{$media-smp} {
+            display: block;
+            width: 100%;
+        }
+    }
+    span {
+        &.bold {
+            font-weight: $font-bold;
+        }
+        &.accent {
+            color: $color-orange;
+            font-weight: $font-mideum;
+        }
+        &.asterisk {
+            display: block;
+            padding-left: 1em;
+            text-indent: -1em;
+        }
+    }
+    &--gray {
+        th {
+            @media #{$media-smp} {
+                border-top: 6px solid $color-white;
+            }
+        }
+        td {
+            background-color: rgba($color: $color-gray, $alpha: .5);
+        }
+    }
+    a {
+        position: relative;
+        top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $color-orange;
+        border-radius: 30px;
+        width: 200px;
+        height: 50px;
+        color: $color-white;
+        font-weight: $font-bold;
+        box-shadow: 0 3px 0 0 rgba($color: $color-black, $alpha: .3);
+        &:hover {
+            top: 3px;
+            box-shadow: 0 0px 0 0 rgba($color: $color-black, $alpha: .3);
+        }
+        @media #{$media-smp} {
+            margin: 0 auto;
+        }
+    }
+}

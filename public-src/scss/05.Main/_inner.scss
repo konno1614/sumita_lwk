@@ -1,0 +1,14 @@
+.o-inner {
+    max-width: calc(1000px + 60px);
+    padding: 0 30px;
+    margin: 0 auto;
+    @media #{$media-smp} {
+        padding: 0 15px;
+    }
+    &--narrow {
+        max-width: calc(1140px + 60px);
+    }
+    &--wide {
+        max-width: calc(1140px + 60px);
+    }
+}
