@@ -1,0 +1,37 @@
+.o-section {
+    position: relative;
+    background-color: $color-white;
+    padding: 100px 0;
+    @media #{$media-smp} {
+        padding: 50px 0;
+    }
+    &::before {
+        content: '';
+        transform: rotate(180deg);
+        position: absolute;
+        top: -40px;
+        right: 0;
+        left: 0%;
+        z-index: 10;
+        display: block;
+        height: 40px;
+        background-size: 40px 15px;
+        background-repeat: repeat-x;
+        background-position: 0 0;
+        background-image: url(../img/common/bg-triangle_white.png);
+    }
+    &--green {
+        background-color: $color-green;
+        color: $color-white;
+        &::before {
+            background-image: url(../img/common/bg-triangle_green.png);
+        }
+    }
+    &--cream {
+        background-color: $color-cream;
+        color: $color-black;
+        &::before {
+            background-image: url(../img/common/bg-triangle_cream.png);
+        }
+    }
+}

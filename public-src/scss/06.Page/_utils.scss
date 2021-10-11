@@ -1,0 +1,32 @@
+br {
+    /*---PC時改行しない--*/
+    &.nobr-pc {
+        @media screen and (min-width:1024px) {
+            display: none;
+        }
+        @media screen and (min-width: 481px) and (max-width: 1024px) {
+        }
+        @media screen and (max-width: 480px) {
+        }
+    }
+    /*---タブレット時改行しない--*/
+    &.nobr-tablet {
+        @media screen and (min-width:1024px) {
+        }
+        @media screen and (min-width: 481px) and (max-width: 1024px) {
+            display: none;
+        }
+        @media screen and (max-width: 480px) {
+        }
+    }
+    /*---スマホ時改行しない--*/
+    &.nobr-sp {
+        @media screen and (min-width:1024px) {
+        }
+        @media screen and (min-width: 481px) and (max-width: 1024px) {
+        }
+        @media screen and (max-width: 480px) {
+            display: none;
+        }
+    }
+}

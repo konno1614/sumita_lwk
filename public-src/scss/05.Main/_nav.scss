@@ -1,0 +1,32 @@
+.o-nav {
+    width: 50%;
+    @media #{$media-tablet} {
+        width: 55%;
+    }
+    @media #{$media-smp} {
+        display: none;
+    }
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    li {
+        position: relative;
+        text-align: center;
+        &:hover {
+            a {
+                border-bottom: 2px solid $color-gray;
+                padding-bottom: 3px;
+            }
+        }
+        a {
+            line-height: 1;
+            font-size: 1.4rem;
+            font-weight: $font-mideum;
+            @media #{$media-tablet} {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}

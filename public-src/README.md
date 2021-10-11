@@ -1,4 +1,4 @@
-# sample
+# markup
 
 ## 開発
 
@@ -9,11 +9,8 @@
 └── public-src     # コンパイル前ソース
 ```
 
-#### html,css,js
+#### html,css,js,img
 `/public-src`内で元ファイルを編集してコンパイル。
-
-#### img,font,etc…
-`/static`内で変更・追加。
 
 ### ローカル開発
 
@@ -21,11 +18,11 @@
 cd public-src
 
 # 依存ファイルインストール
-npm install or yarn install
+npm install
 
 # 開発
-npm start or yarn start
+npm start
 
 # コンパイル
-npm run build or yarn build
+npm run build
 ```

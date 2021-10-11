@@ -1,0 +1,44 @@
+.o-subtitle {
+    font-size: 2.0rem;
+    font-weight: $font-mideum;
+    line-height: 1;
+    display: inline-block;
+    @media #{$media-smp} {
+        font-size: 1.8rem;
+        line-height: 1.2;
+    }
+    &::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 3px;
+        margin-top: 10px;
+        @media #{$media-smp} {
+            height: 2px;
+            margin-top: 8px;
+        }
+    }
+    span {
+        &.red {
+            color: #dd2c2c;
+        }
+        &.blue {
+            color: #3562d6;
+        }
+        &.orange {
+            color: $color-red;
+        }
+    }
+    &--white {
+        color: $color-white;
+        &::after {
+            background-color: $color-white;
+        }
+    }
+    &--black {
+        color: $color-black;
+        &::after {
+            background-color: $color-green;
+        }
+    }
+}

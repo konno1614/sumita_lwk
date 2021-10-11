@@ -1,0 +1,40 @@
+.o-title {
+    line-height: 1;
+    text-align: center;
+    font-size: 3.0rem;
+    font-weight: $font-bold;
+    margin-bottom: 50px;
+    color: $color-white;
+    @media #{$media-smp} {
+        font-size: 2.0rem;
+        line-height: 1.2;
+        margin-bottom: 30px;
+    }
+    span {
+        color: $color-white;
+    }
+    br {
+        display: none;
+        @media #{$media-smp} {
+            display: block;
+        }
+    }
+    span {
+        line-height: 1;
+        display: block;
+        margin-top: 10px;
+        font-size: 1.6rem;
+        text-shadow: none;
+        @media #{$media-smp} {
+            font-size: 1.4rem;
+        }
+    }
+    &--black {
+        color: $color-black;
+        @media #{$media-smp} {
+        }
+        span {
+            color: $color-black;
+        }
+    }
+}

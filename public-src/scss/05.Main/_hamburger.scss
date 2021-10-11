@@ -1,0 +1,49 @@
+.o-hamburger {
+    position: relative;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: .3s all ease-in-out;
+    display: none;
+    @media #{$media-smp} {
+        display: flex;
+    }
+    &:hover {
+        cursor: pointer;
+    }
+    span {
+        position: relative;
+        display: inline-block;
+        width: 20px;
+        height: 2px;
+        background-color: $color-green;
+        transition: .3s all ease-in-out;
+        &+span {
+            margin-top: 5px;
+            transition: .3s all ease-in-out;
+        }
+    }
+    &.is_active {
+        transition: .3s all ease-in-out;
+        background-color: transparent;
+        border: none;
+        span {
+            &:nth-child(1) {
+                transform: rotate(45deg);
+                top: 2px;
+            }
+            &:nth-child(2) {
+                display: none;
+            }
+            &:nth-child(3) {
+                transform: rotate(-45deg);
+            }
+            &+span {
+                margin-top: 0;
+                top: 0px;
+            }
+        }
+    }
+}
