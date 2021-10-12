@@ -3,6 +3,7 @@
     font-weight: $font-mideum;
     line-height: 1;
     display: inline-block;
+    color: $color-black;
     @media #{$media-smp} {
         font-size: 1.8rem;
         line-height: 1.2;
@@ -13,6 +14,7 @@
         width: 100%;
         height: 3px;
         margin-top: 10px;
+        background-color: $color-green;
         @media #{$media-smp} {
             height: 2px;
             margin-top: 8px;
@@ -28,17 +30,14 @@
         &.orange {
             color: $color-red;
         }
+        &.brown {
+            color: $color-brown;
+        }
     }
     &--white {
         color: $color-white;
         &::after {
             background-color: $color-white;
-        }
-    }
-    &--black {
-        color: $color-black;
-        &::after {
-            background-color: $color-green;
         }
     }
 }

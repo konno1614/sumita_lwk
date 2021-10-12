@@ -3,11 +3,14 @@
     }
     // common
     &__common-text {
-        margin-top: 30px;
+        margin-top: 20px;
         @media #{$media-smp} {
             margin-top: 15px;
         }
         a {
+            color: $color-red;
+        }
+        span {
             color: $color-red;
         }
     }
@@ -63,8 +66,8 @@
         font-weight: $font-bold;
         text-align: center;
         color: $color-white;
-        text-shadow:0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black;
-        filter: drop-shadow(2px 2px 9px $color-white);
+        text-shadow:0 0 2px $color-brown,0 0 2px $color-brown,0 0 2px $color-brown,0 0 2px $color-brown,0 0 2px $color-brown,0 0 2px $color-brown,0 0 2px $color-brown,0 0 2px $color-brown,0 0 2px $color-brown,0 0 2px $color-brown,0 0 2px $color-brown,0 0 2px $color-brown,0 0 2px $color-brown,0 0 2px $color-brown,0 0 2px $color-brown,0 0 2px $color-brown;
+        filter: drop-shadow(2px 2px 9px $color-brown);
         margin-top: 150px;
         @media #{$media-smp} {
             font-size: 2.2rem;
@@ -78,19 +81,11 @@
             @media #{$media-smp} {
                 font-size: 1.8rem;
             }
-            &.blue {
+            &.green {
                 color: $color-green;
                 font-size: 3.6rem;
-                @media #{$media-smp} {
-                    font-size: 2.2rem;
-                }
-                @media screen and (max-width: 374px) {
-                    font-size: 1.8rem;
-                }
-            }
-            &.orange {
-                color: $color-red;
-                font-size: 3.6rem;
+                text-shadow:0 0 2px $color-white,0 0 2px $color-white,0 0 2px $color-white,0 0 2px $color-white,0 0 2px $color-white,0 0 2px $color-white,0 0 2px $color-white,0 0 2px $color-white,0 0 2px $color-white,0 0 2px $color-white,0 0 2px $color-white,0 0 2px $color-white,0 0 2px $color-white,0 0 2px $color-white,0 0 2px $color-white,0 0 2px $color-white;
+                filter: drop-shadow(2px 2px 9px $color-brown);
                 @media #{$media-smp} {
                     font-size: 2.2rem;
                 }
@@ -108,10 +103,10 @@
         color: $color-white;
         text-shadow:0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black;
         filter: drop-shadow(2px 2px 9px $color-black);
-        margin-top: 120px;
+        margin-top: 150px;
         @media #{$media-smp} {
             font-size: 2.0rem;
-            margin-top: 50px;
+            margin-top: 70px;
         }
         @media screen and (max-width: 374px) {
             font-size: 1.8rem;
@@ -157,9 +152,11 @@
     }
     // バナー
     &__banner {
-        margin-bottom: 50px;
+        padding: 75px 0;
+        @media #{$media-smp} {
+            padding: 50px 0;
+        }
         &-inner {
-            margin-top: 50px;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -177,14 +174,8 @@
                         margin-top: 15px;
                     }
                 }
-                &.banner01 {
-
-                }
-                &.banner02 {
-
-                }
-                &.banner03 {
-
+                &.pointer-none {
+                    pointer-events: none;
                 }
             }
         }
@@ -192,6 +183,7 @@
     // モニター開催地について
     &__venue {
         &-flex {
+            margin-top: 20px;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -208,9 +200,14 @@
                     width: 48%;
                 }
                 li {
-                    width: 33%;
+                    width: 49%;
+                    margin-bottom: 15px;
                     @media #{$media-smp} {
-                        width: 50%;
+                        width: 100%;
+                        margin-bottom: 0;
+                        &+li {
+                            margin-top: 10px;
+                        }
                     }
                 }
             }
@@ -286,70 +283,56 @@
             }
         }
     }
-    // 「人が魅力のまち」広田町
-    &__hirota {
-        &-flex {
-            margin-top: 30px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            @media #{$media-smp} {
-                margin-top: 15px;
-            }
-            .image {
-                width: 49%;
+    // 「森林・林業日本一の町づくり」住田町
+    &__sumita {
+        &-block {
+            &+.c-top__sumita-block {
+                margin-top: 50px;
                 @media #{$media-smp} {
-                    width: 48%;
-                }
-            }
-            ul {
-                width: 50%;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                flex-wrap: wrap;
-                @media #{$media-smp} {
-                    width: 48%;
-                }
-                li {
-                    width: 50%;
-                    @media #{$media-smp} {
-
-                    }
+                    margin-top: 30px;
                 }
             }
         }
-    }
-    // サポートメンバー「SET」について
-    &__support {
         &-flex {
-            margin-top: 30px;
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             justify-content: space-between;
             @media #{$media-smp} {
-                flex-direction: column-reverse;
-                margin-top: 15px;
+                flex-direction: column;
             }
-            .left {
-                width: 50%;
+            .box {
+                width: 31%;
                 @media #{$media-smp} {
                     width: 100%;
-                    margin-top: 1em;
+                    &+.box {
+                        margin-top: 30px;
+                    }
                 }
-                p+p {
-                    margin-top: 1em;
+                .image {
+                    text-align: center;
                 }
-            }
-            .right {
-                width: 48%;
-                @media #{$media-smp} {
-                    width: 100%;
+                p {
+                    margin-top: 10px;
                     text-align: center;
                 }
             }
         }
     }
+    // モニターツアーの概要
+    &__overview {
+        &-block {
+            &+.c-top__overview-block {
+                margin-top: 50px;
+                @media #{$media-smp} {
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+
+
+
+
     // モニターツアーの全体像
     &__overall {
         &-flex {
