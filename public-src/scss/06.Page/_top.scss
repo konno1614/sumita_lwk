@@ -565,7 +565,6 @@
             }
         }
     }
-
     // 拠点
     &__hub {
         &-block {
@@ -606,6 +605,10 @@
                 justify-content: center;
                 @media #{$media-smp} {
                     width: 100%;
+                }
+                h4 {
+                    margin-top: 0;
+                    margin-bottom: 20px;
                 }
                 p {
                     &+p {
