@@ -466,9 +466,6 @@
             }
         }
     }
-
-
-
     // 事前/事後研修の内容
     &__contents {
         &-block {
@@ -486,17 +483,9 @@
             }
         }
     }
-    // 研修フレームワーク：「MV2GROWモデル」
-    &__model {
-        &-image {
-            text-align: center;
-        }
-    }
-    // 研修フレームワーク：「SET流思考法」
-    &__method {
-        &-image {
-            text-align: center;
-        }
+    // 学びの場所
+    &__place {
+
     }
     // サポートメンバー／ナビゲーター
     &__member {
@@ -519,67 +508,12 @@
                 }
             }
         }
-        &-member {
-            .box {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                @media #{$media-smp} {
-                    flex-direction: column;
-                }
-                &--first {
-                    margin-top: 30px;
-                    @media #{$media-smp} {
-                        margin-top: 15px;
-                    }
-                }
-                &+.box {
-                    margin-top: 50px;
-                }
-                .left {
-                    width: 30%;
-                    @media #{$media-smp} {
-                        width: 100%;
-                        text-align: center;
-                    }
-                }
-                .right {
-                    width: 65%;
-                    @media #{$media-smp} {
-                        width: 100%;
-                        margin-top: 20px;
-                    }
-                    .affiliation {
-                        line-height: 1;
-                        font-size: 1.8rem;
-                        font-weight: $font-mideum;
-                        @media #{$media-smp} {
-                            font-size: 1.6rem;
-                        }
-                    }
-                    h3 {
-                        line-height: 1;
-                        font-size: 2.4rem;
-                        font-weight: $font-bold;
-                        margin-top: 20px;
-                        @media #{$media-smp} {
-                            font-size: 2.0rem;
-                            margin-top: 10px;
-                        }
-                    }
-                    p {
-                        margin-top: 25px;
-                        @media #{$media-smp} {
-                            margin-top: 15px;
-                        }
-                    }
-                }
-            }
-        }
         &-navigator {
-            margin-top: 80px;
-            @media #{$media-smp} {
-                margin-top: 60px;
+            &+.c-top__member-navigator {
+                margin-top: 80px;
+                @media #{$media-smp} {
+                    margin-top: 30px;
+                }
             }
             .block {
                 margin-top: 30px;
@@ -587,9 +521,6 @@
                 align-items: flex-start;
                 justify-content: space-between;
                 flex-wrap: wrap;
-                @media #{$media-smp} {
-                    margin-top: 15px;
-                }
                 &::after {
                     content: "";
                     display: block;
@@ -634,6 +565,7 @@
             }
         }
     }
+
     // 拠点
     &__hub {
         &-block {
