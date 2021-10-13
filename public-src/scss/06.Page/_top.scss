@@ -246,15 +246,6 @@
                     height: 50px;
                 }
             }
-            .left {
-
-            }
-            .center {
-
-            }
-            .right {
-
-            }
             p {
                 position: relative;
                 top: 30px;
@@ -276,12 +267,6 @@
                         height: 20px;
                         background-color: $color-green;
                     }
-                }
-                &.text01 {
-
-                }
-                &.text02 {
-
                 }
             }
         }
@@ -635,5 +620,8 @@
                 }
             }
         }
+    }
+    &__about {
+
     }
 }
