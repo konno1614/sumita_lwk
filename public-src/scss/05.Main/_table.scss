@@ -29,6 +29,9 @@
             display: block;
             width: 100%;
         }
+        p+p {
+            margin-top: 10px;
+        }
     }
     span {
         &.bold {
@@ -44,14 +47,11 @@
             text-indent: -1em;
         }
     }
-    &--gray {
+    &--cream {
         th {
             @media #{$media-smp} {
                 border-top: 6px solid $color-white;
             }
-        }
-        td {
-            background-color: rgba($color: $color-gray, $alpha: .5);
         }
     }
     a {

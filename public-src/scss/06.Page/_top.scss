@@ -45,9 +45,6 @@
             margin-left: 10px;
         }
     }
-    .box-shadow {
-        box-shadow: 0 0 8px $color-black;
-    }
     // メイン
     &__main-area {
         position: relative;
@@ -470,7 +467,28 @@
     }
     // 学びの場所
     &__place {
-
+        &-block {
+            &+.c-top__place-block {
+                margin-top: 70px;
+                @media #{$media-smp} {
+                    margin-top: 40px;
+                }
+            }
+            .images {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                img {
+                    width: 49%;
+                }
+            }
+            .explanation {
+                margin-top: 30px;
+                @media #{$media-smp} {
+                    margin-top: 20px;
+                }
+            }
+        }
     }
     // サポートメンバー／ナビゲーター
     &__member {
