@@ -1,7 +1,7 @@
 .o-table {
     width: 100%;
-    border-collapse: separate;
-    border-spacing: 6px;
+    // border-collapse: separate;
+    // border-spacing: 6px;
     font-size: 1.4rem;
     @media #{$media-smp} {
         border-collapse: collapse;
@@ -13,10 +13,13 @@
         width: 30%;
         background-color: rgba($color: $color-brown, $alpha: .9);
         padding: 10px;
+        border-bottom: 6px solid $color-green;
+        border-right: 6px solid $color-green;
         @media #{$media-smp} {
             display: block;
             width: 100%;
-            border-top: 6px solid $color-green;
+            border-right: none;
+            border-bottom: none;
         }
     }
     td {
@@ -25,6 +28,8 @@
         padding: 10px;
         color: $color-black;
         letter-spacing: 1px;
+        border-bottom: 6px solid $color-green;
+        // border-right: 6px solid $color-green;
         @media #{$media-smp} {
             display: block;
             width: 100%;
@@ -49,9 +54,16 @@
     }
     &--cream {
         th {
+            border-bottom: 6px solid $color-cream;
+            border-right: 6px solid $color-cream;
             @media #{$media-smp} {
-                border-top: 6px solid $color-white;
+                border-right: none;
+                border-bottom: none;
             }
+        }
+        td {
+            border-bottom: 6px solid $color-cream;
+            // border-right: 6px solid $color-cream;
         }
     }
     a {
