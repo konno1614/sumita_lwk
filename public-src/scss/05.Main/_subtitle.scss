@@ -22,13 +22,10 @@
     }
     span {
         &.red {
-            color: #dd2c2c;
-        }
-        &.blue {
-            color: #3562d6;
-        }
-        &.orange {
             color: $color-red;
+        }
+        &.yellow {
+            color: $color-yellow;
         }
         &.brown {
             color: $color-brown;
