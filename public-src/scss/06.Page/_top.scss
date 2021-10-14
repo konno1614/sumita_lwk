@@ -66,12 +66,14 @@
         font-weight: $font-bold;
         text-align: center;
         color: $color-white;
-        text-shadow:0 0 2px $color-brown,0 0 2px $color-brown,0 0 2px $color-brown,0 0 2px $color-brown,0 0 2px $color-brown,0 0 2px $color-brown,0 0 2px $color-brown,0 0 2px $color-brown,0 0 2px $color-brown,0 0 2px $color-brown,0 0 2px $color-brown,0 0 2px $color-brown,0 0 2px $color-brown,0 0 2px $color-brown,0 0 2px $color-brown,0 0 2px $color-brown;
+        text-shadow:0 0 3px $color-brown,0 0 3px $color-brown,0 0 3px $color-brown,0 0 3px $color-brown,0 0 3px $color-brown,0 0 3px $color-brown,0 0 3px $color-brown,0 0 3px $color-brown,0 0 3px $color-brown,0 0 3px $color-brown,0 0 3px $color-brown,0 0 3px $color-brown,0 0 3px $color-brown,0 0 3px $color-brown,0 0 3px $color-brown,0 0 3px $color-brown;
         filter: drop-shadow(2px 2px 9px $color-brown);
         margin-top: 150px;
         @media #{$media-smp} {
             font-size: 2.2rem;
             margin-top: 70px;
+            text-shadow:0 0 2px $color-brown,0 0 2px $color-brown,0 0 2px $color-brown,0 0 2px $color-brown,0 0 2px $color-brown,0 0 2px $color-brown,0 0 2px $color-brown,0 0 2px $color-brown,0 0 2px $color-brown,0 0 2px $color-brown,0 0 2px $color-brown,0 0 2px $color-brown,0 0 2px $color-brown,0 0 2px $color-brown,0 0 2px $color-brown,0 0 2px $color-brown;
+        filter: drop-shadow(2px 2px 9px $color-brown);
         }
         @media screen and (max-width: 374px) {
             font-size: 2.0rem;
@@ -84,10 +86,11 @@
             &.green {
                 color: $color-green;
                 font-size: 3.6rem;
-                text-shadow:0 0 2px $color-white,0 0 2px $color-white,0 0 2px $color-white,0 0 2px $color-white,0 0 2px $color-white,0 0 2px $color-white,0 0 2px $color-white,0 0 2px $color-white,0 0 2px $color-white,0 0 2px $color-white,0 0 2px $color-white,0 0 2px $color-white,0 0 2px $color-white,0 0 2px $color-white,0 0 2px $color-white,0 0 2px $color-white;
+                text-shadow:0 0 3px $color-white,0 0 3px $color-white,0 0 3px $color-white,0 0 3px $color-white,0 0 3px $color-white,0 0 3px $color-white,0 0 3px $color-white,0 0 3px $color-white,0 0 3px $color-white,0 0 3px $color-white,0 0 3px $color-white,0 0 3px $color-white,0 0 3px $color-white,0 0 3px $color-white,0 0 3px $color-white,0 0 3px $color-white;
                 filter: drop-shadow(2px 2px 9px $color-brown);
                 @media #{$media-smp} {
                     font-size: 2.2rem;
+                    text-shadow:0 0 2px $color-white,0 0 2px $color-white,0 0 2px $color-white,0 0 2px $color-white,0 0 2px $color-white,0 0 2px $color-white,0 0 2px $color-white,0 0 2px $color-white,0 0 2px $color-white,0 0 2px $color-white,0 0 2px $color-white,0 0 2px $color-white,0 0 2px $color-white,0 0 2px $color-white,0 0 2px $color-white,0 0 2px $color-white;
                 }
                 @media screen and (max-width: 374px) {
                     font-size: 1.8rem;
@@ -101,12 +104,13 @@
         font-weight: $font-mideum;
         text-align: center;
         color: $color-white;
-        text-shadow:0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black;
+        text-shadow:0 0 3px $color-black,0 0 3px $color-black,0 0 3px $color-black,0 0 3px $color-black,0 0 3px $color-black,0 0 3px $color-black,0 0 3px $color-black,0 0 3px $color-black,0 0 3px $color-black,0 0 3px $color-black,0 0 3px $color-black,0 0 3px $color-black,0 0 3px $color-black,0 0 3px $color-black,0 0 3px $color-black,0 0 3px $color-black;
         filter: drop-shadow(2px 2px 9px $color-black);
         margin-top: 150px;
         @media #{$media-smp} {
             font-size: 2.0rem;
             margin-top: 70px;
+            text-shadow:0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black;
         }
         @media screen and (max-width: 374px) {
             font-size: 1.8rem;
@@ -827,7 +831,7 @@
                     width: 100%;
                 }
                 img {
-                    margin-bottom: 10px;
+                    margin-bottom: 20px;
                     width: 48%;
                     @media #{$media-smp} {
                         margin-bottom: 15px;
