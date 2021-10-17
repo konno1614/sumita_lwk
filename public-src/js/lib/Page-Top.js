@@ -5,8 +5,10 @@ $(function() {
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
             topBtn.fadeIn();
+            topBtn.addClass("fadein");
         } else {
             topBtn.fadeOut();
+            topBtn.removeClass("fadein");
         }
     });
     //スクロールしてトップ

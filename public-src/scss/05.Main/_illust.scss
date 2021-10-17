@@ -1,0 +1,37 @@
+.o-illust {
+    position: relative;
+    &__deer {
+        max-width: 80px;
+        position: absolute;
+    }
+    &__deer01 {
+        top: -96px;
+        right: 100px;
+        @media #{$media-smp} {
+            right: 30px;
+        }
+    }
+    &__deer02 {
+        top: -79px;
+        right: 50px;
+        @media #{$media-smp} {
+            right: 0;
+        }
+    }
+    &__deer03 {
+        top: -96px;
+        left: 100px;
+        transform: scale(-1, 1);
+        @media #{$media-smp} {
+            left: 30px;
+        }
+    }
+    &__deer04 {
+        top: -79px;
+        left: 50px;
+        transform: scale(-1, 1);
+        @media #{$media-smp} {
+            left: 0;
+        }
+    }
+}
