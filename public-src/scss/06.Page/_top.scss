@@ -156,9 +156,9 @@
     }
     // バナー
     &__banner {
-        padding: 75px 0;
+        padding: 75px 0 150px;
         @media #{$media-smp} {
-            padding: 50px 0;
+            padding: 50px 0 100px;
         }
         &-inner {
             display: flex;
@@ -307,8 +307,13 @@
             }
         }
     }
+    // 学べること・得られること
+    &__learning {
+    }
     // モニターツアーの概要
     &__overview {
+        position: relative;
+        padding-bottom: 150px;
         &-block {
             &+.c-top__overview-block {
                 margin-top: 50px;
@@ -445,6 +450,7 @@
     }
     // 事前/事後研修の内容
     &__contents {
+        position: relative;
         &-block {
             &+.c-top__contents-block {
                 margin-top: 70px;
@@ -565,6 +571,7 @@
     }
     // 拠点
     &__hub {
+        position: relative;
         &-block {
             &+.c-top__hub-block {
                 margin-top: 70px;
