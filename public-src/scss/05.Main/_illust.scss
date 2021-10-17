@@ -1,8 +1,10 @@
 .o-illust {
     position: relative;
-    &__deer01 {
+    &__deer {
         max-width: 80px;
         position: absolute;
+    }
+    &__deer01 {
         top: -96px;
         right: 100px;
         @media #{$media-smp} {
@@ -10,8 +12,6 @@
         }
     }
     &__deer02 {
-        max-width: 80px;
-        position: absolute;
         top: -79px;
         right: 50px;
         @media #{$media-smp} {
@@ -19,8 +19,6 @@
         }
     }
     &__deer03 {
-        max-width: 80px;
-        position: absolute;
         top: -96px;
         left: 100px;
         transform: scale(-1, 1);
@@ -29,8 +27,6 @@
         }
     }
     &__deer04 {
-        max-width: 80px;
-        position: absolute;
         top: -79px;
         left: 50px;
         transform: scale(-1, 1);
