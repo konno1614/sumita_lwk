@@ -87,4 +87,29 @@
             margin: 0 auto;
         }
     }
+    &__contact {
+        margin-top: 15px;
+        h3 {
+            font-size: 1.8rem;
+            font-weight: $font-mideum;
+        }
+        p {
+            margin-top: 5px;
+            font-weight: $font-mideum;
+        }
+        a {
+            display: block;
+            background-color: inherit;
+            width: auto;
+            height: auto;
+            color: $color-black;
+            box-shadow: unset;
+            text-decoration: underline;
+            &:hover {
+                top: auto;
+                box-shadow: unset;
+                color: $color-red;
+            }
+        }
+    }
 }

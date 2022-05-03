@@ -105,6 +105,26 @@
             }
         }
     }
+    &__text {
+        line-height: 1.5;
+        letter-spacing: .1em;
+        font-size: 2.4rem;
+        font-weight: $font-mideum;
+        text-align: center;
+        color: $color-white;
+        text-shadow:0 0 3px $color-black,0 0 3px $color-black,0 0 3px $color-black,0 0 3px $color-black,0 0 3px $color-black,0 0 3px $color-black,0 0 3px $color-black,0 0 3px $color-black,0 0 3px $color-black,0 0 3px $color-black,0 0 3px $color-black,0 0 3px $color-black,0 0 3px $color-black,0 0 3px $color-black,0 0 3px $color-black,0 0 3px $color-black;
+        filter: drop-shadow(2px 2px 9px $color-black);
+        margin-top: 30px;
+        @media #{$media-smp} {
+            font-size: 1.4rem;
+            margin-top: 10px;
+            text-shadow:0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black;
+        }
+        @media screen and (max-width: 374px) {
+            font-size: 1.2rem;
+            margin-top: 25px;
+        }
+    }
     &__sub {
         line-height: 1.2;
         font-size: 2.8rem;
@@ -113,10 +133,10 @@
         color: $color-white;
         text-shadow:0 0 3px $color-black,0 0 3px $color-black,0 0 3px $color-black,0 0 3px $color-black,0 0 3px $color-black,0 0 3px $color-black,0 0 3px $color-black,0 0 3px $color-black,0 0 3px $color-black,0 0 3px $color-black,0 0 3px $color-black,0 0 3px $color-black,0 0 3px $color-black,0 0 3px $color-black,0 0 3px $color-black,0 0 3px $color-black;
         filter: drop-shadow(2px 2px 9px $color-black);
-        margin-top: 150px;
+        margin-top: 100px;
         @media #{$media-smp} {
             font-size: 2.0rem;
-            margin-top: 70px;
+            margin-top: 20px;
             text-shadow:0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black;
         }
         @media screen and (max-width: 374px) {
@@ -201,23 +221,34 @@
             @media #{$media-smp} {
                 margin-top: 15px;
             }
-            ul {
+            .images {
                 width: 66%;
                 display: flex;
-                align-items: center;
                 justify-content: space-between;
-                flex-wrap: wrap;
                 @media #{$media-smp} {
                     width: 48%;
+                    flex-direction: column;
                 }
-                li {
-                    width: 49%;
-                    margin-bottom: 15px;
+                .left {
+                    width: 48%;
                     @media #{$media-smp} {
                         width: 100%;
-                        margin-bottom: 0;
-                        &+li {
-                            margin-top: 10px;
+                    }
+                }
+                .right {
+                    width: 48%;
+                    display: flex;
+                    flex-direction: column;
+                    @media #{$media-smp} {
+                        width: 100%;
+                        margin-top: 15px;
+                    }
+                    img {
+                        &+img {
+                            margin-top: auto;
+                            @media #{$media-smp} {
+                                margin-top: 15px;
+                            }
                         }
                     }
                 }
