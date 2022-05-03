@@ -124,6 +124,18 @@
             font-size: 1.2rem;
             margin-top: 25px;
         }
+        span.green {
+            text-shadow:0 0 3px $color-green,0 0 3px $color-green,0 0 3px $color-green,0 0 3px $color-green,0 0 3px $color-green,0 0 3px $color-green,0 0 3px $color-green,0 0 3px $color-green,0 0 3px $color-green,0 0 3px $color-green,0 0 3px $color-green,0 0 3px $color-green,0 0 3px $color-green,0 0 3px $color-green,0 0 3px $color-green,0 0 2px $color-green;
+            @media #{$media-smp} {
+                text-shadow:0 0 2px $color-green,0 0 2px $color-green,0 0 2px $color-green,0 0 2px $color-green,0 0 2px $color-green,0 0 2px $color-green,0 0 2px $color-green,0 0 2px $color-green,0 0 2px $color-green,0 0 2px $color-green,0 0 2px $color-green,0 0 2px $color-green,0 0 2px $color-green,0 0 2px $color-green,0 0 2px $color-green,0 0 2px $color-green;
+            }
+        }
+        span.red {
+            text-shadow:0 0 3px $color-red,0 0 3px $color-red,0 0 3px $color-red,0 0 3px $color-red,0 0 3px $color-red,0 0 3px $color-red,0 0 3px $color-red,0 0 3px $color-red,0 0 3px $color-red,0 0 3px $color-red,0 0 3px $color-red,0 0 3px $color-red,0 0 3px $color-red,0 0 3px $color-red,0 0 3px $color-red,0 0 2px $color-red;
+            @media #{$media-smp} {
+                text-shadow:0 0 2px $color-red,0 0 2px $color-red,0 0 2px $color-red,0 0 2px $color-red,0 0 2px $color-red,0 0 2px $color-red,0 0 2px $color-red,0 0 2px $color-red,0 0 2px $color-red,0 0 2px $color-red,0 0 2px $color-red,0 0 2px $color-red,0 0 2px $color-red,0 0 2px $color-red,0 0 2px $color-red,0 0 2px $color-red;
+            }
+        }
     }
     &__sub {
         line-height: 1.2;
@@ -183,9 +195,9 @@
     }
     // バナー
     &__banner {
-        padding: 75px 0 150px;
+        padding: 80px 0 80px;
         @media #{$media-smp} {
-            padding: 50px 0 100px;
+            padding: 50px 0 50px;
         }
         &-inner {
             display: flex;
@@ -202,7 +214,7 @@
                     max-width: 230px;
                     width: 100%;
                     &+a {
-                        margin-top: 15px;
+                        margin-top: 25px;
                     }
                 }
                 &.pointer-none {
@@ -881,6 +893,56 @@
                         margin-bottom: 15px;
                     }
                 }
+            }
+        }
+    }
+    // 越境学習「地域資源学習型」プログラムご紹介
+    &__program {
+
+        &-images {
+            margin-top: 50px;
+            position: relative;
+            z-index: 10;
+            @media #{$media-smp} {
+                margin-top: 30px;
+            }
+            &::after {
+                content: "";
+                display: block;
+                width: 100%;
+                height: 396px;
+                background-image: url(../img/program/images.png);
+                background-position: center top;
+                background-repeat: repeat-x;
+                background-size: auto;
+                animation: scene 40s linear infinite;
+                @media #{$media-smp} {
+                    animation: scene 30s linear infinite;
+                }
+            }
+            @keyframes scene {
+                0% {
+                    background-position: 0 0;
+                }
+                100% {
+                    background-position: -1727px 0;
+                }
+            }
+        }
+        &-iframe {
+            margin-top: 50px;
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%;
+            @media #{$media-smp} {
+                margin-top: 30px;
+            }
+            iframe {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
             }
         }
     }
