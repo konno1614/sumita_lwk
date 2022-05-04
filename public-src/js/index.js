@@ -3,6 +3,8 @@ import Nav from './lib/Sp-Nav'
 import PageTop from './lib/Page-Top'
 import Swiper from './lib/Swiper'
 import Fadein from './lib/Fadein'
+import ScrollHint from './lib/Scroll-Hint'
+import Loading from './lib/Loading'
 
 $(function() {
     /**
