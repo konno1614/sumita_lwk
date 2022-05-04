@@ -105,6 +105,7 @@
             color: $color-black;
             box-shadow: unset;
             text-decoration: underline;
+            word-break: break-all;
             &:hover {
                 top: auto;
                 box-shadow: unset;
