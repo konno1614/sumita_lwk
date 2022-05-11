@@ -24,6 +24,7 @@
 #loading .kvArea .img_box img {
     max-width: 100%;
     height: auto;
+    mix-blend-mode: multiply;
 }
 .fadeUp {
     animation-name: fadeUpAnime;
@@ -40,5 +41,99 @@
     to {
         opacity: 0;
         transform: scale(0);
+    }
+}
+.loading-text {
+    span {
+        color: $color-green;
+        font-size: 2.4rem;
+        font-weight: $font-mideum;
+        display: inline-block;
+        margin: 0 -.075em;
+        animation: loading 5.0s infinite alternate;
+        &:nth-child(1) {
+            animation-delay: .1s;
+        }
+        &:nth-child(2) {
+            animation-delay: .2s;
+        }
+        &:nth-child(3) {
+            animation-delay: .3s;
+        }
+        &:nth-child(4) {
+            animation-delay: .4s;
+        }
+        &:nth-child(5) {
+            animation-delay: .5s;
+        }
+        &:nth-child(6) {
+            animation-delay: .6s;
+        }
+        &:nth-child(7) {
+            animation-delay: .7s;
+        }
+        &:nth-child(8) {
+            animation-delay: .8s;
+        }
+        &:nth-child(9) {
+            animation-delay: .9s;
+        }
+        &:nth-child(10) {
+            animation-delay: 1.0s;
+        }
+    }
+    @keyframes loading {
+        0% {
+            transform: scale(.8) translateY(0);
+        }
+        50% {
+            transform: scale(1) translateY(10px);
+        }
+        100% {
+            transform: scale(.8) translateY(0);
+        }
+    }
+}
+.loading-img {
+    max-width: 100px;
+    position: fixed;
+    bottom: 0;
+    @media #{$media-smp} {
+        max-width: 75px;
+    }
+    &--01 {
+        animation: illustAnime01 3.0s infinite alternate;
+        animation-delay: .1s;
+        right: 5%;
+        @media #{$media-smp} {
+            right: 20%;
+        }
+    }
+    &--02 {
+        right: 0;
+        animation: illustAnime02 3.0s infinite alternate;
+        animation-delay: .3s;
+    }
+    @keyframes illustAnime01 {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(100%);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+    @keyframes illustAnime02 {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(100%);
+        }
+        100% {
+            transform: translateY(0);
+        }
     }
 }
