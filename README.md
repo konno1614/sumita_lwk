@@ -1,12 +1,12 @@
-# sample
+# SUMITA_LWK
 
 ## 開発
 
 ### ディレクトリ構造
 
 ```txt
-├── public  # ドキュメントルート
-└── public-src     # コンパイル前ソース
+├── public      # ドキュメントルート
+└── public-src  # コンパイル前ソース
 ```
 
 #### html,css,js
@@ -24,8 +24,11 @@ cd public-src
 npm install or yarn install
 
 # 開発
-npm start or yarn start
+npm run start or yarn start
 
 # コンパイル
 npm run build or yarn build
 ```
+
+## GitHub Pages
+[Public Site](https://konno1614.github.io/sumita_lwk/public/)
