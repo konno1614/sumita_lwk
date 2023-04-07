@@ -20,6 +20,9 @@
 ```sh
 cd public-src
 
+# 推奨node Ver
+v.10.0.0
+
 # 依存ファイルインストール
 npm install or yarn install
 

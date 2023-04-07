@@ -1,0 +1,36 @@
+.s-sumita {
+    @media #{$media-smp} {
+    }
+    &__block {
+        &+& {
+            margin-top: 50px;
+            @media #{$media-smp} {
+                margin-top: 30px;
+            }
+        }
+    }
+    &__flex {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        @media #{$media-smp} {
+            flex-direction: column;
+        }
+        .box {
+            width: 31%;
+            @media #{$media-smp} {
+                width: 100%;
+                &+.box {
+                    margin-top: 30px;
+                }
+            }
+            .image {
+                text-align: center;
+            }
+            p {
+                margin-top: 10px;
+                text-align: center;
+            }
+        }
+    }
+}

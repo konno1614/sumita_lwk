@@ -1,0 +1,26 @@
+.s-place {
+    @media #{$media-smp} {
+    }
+    &__block {
+        &+& {
+            margin-top: 70px;
+            @media #{$media-smp} {
+                margin-top: 40px;
+            }
+        }
+        .images {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            img {
+                width: 49%;
+            }
+        }
+        .explanation {
+            margin-top: 30px;
+            @media #{$media-smp} {
+                margin-top: 20px;
+            }
+        }
+    }
+}
