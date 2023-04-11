@@ -57,52 +57,6 @@
                     margin-top: 15px;
                 }
             }
-            ul {
-                margin-top: 15px;
-                @media #{$media-smp} {
-                    margin-top: 15px;
-                }
-                li {
-                    font-size: 1.4rem;
-                    border: 2px solid $color-green;
-                    border-radius: 5px;
-                    padding: 10px 15px;
-                    &+li {
-                        margin-top: 15px;
-                    }
-                    p {
-                        padding-left: 3em;
-                        text-indent: -3em;
-                    }
-                    span {
-                        &.bold {
-                            font-weight: $font-bold;
-                        }
-                        &.red {
-                            color: $color-red;
-                        }
-                        &.green {
-                            color: $color-green;
-                        }
-                    }
-                    &.asterisk {
-                        border: none;
-                        padding-left: 1em;
-                        text-indent: -1em;
-                    }
-                    table {
-                        th {
-                            font-weight: $font-mideum;
-                            vertical-align: top;
-                            width: 70px;
-                            padding-top: 10px;
-                        }
-                        td {
-                            padding-top: 10px;
-                        }
-                    }
-                }
-            }
         }
         .arrow {
             position: relative;
@@ -120,6 +74,57 @@
             @media #{$media-smp} {
                 transform: rotate(135deg);
                 margin-top: 10px;
+            }
+        }
+    }
+    &__list {
+        margin-top: 15px;
+        @media #{$media-smp} {
+        }
+    }
+    &__item {
+        font-size: 1.4rem;
+        border: 2px solid $color-green;
+        border-radius: 5px;
+        padding: 10px 15px;
+        &+li {
+            margin-top: 15px;
+        }
+        p {
+            padding-left: 3em;
+            text-indent: -3em;
+        }
+        span {
+            &.bold {
+                font-weight: $font-bold;
+            }
+            &.red {
+                color: $color-red;
+            }
+            &.green {
+                color: $color-green;
+            }
+        }
+        &.asterisk {
+            border: none;
+            padding-left: 1em;
+            text-indent: -1em;
+        }
+        table {
+            th {
+                font-weight: $font-mideum;
+                vertical-align: top;
+                width: 70px;
+                padding-top: 10px;
+            }
+            td {
+                padding-top: 10px;
+            }
+        }
+        ul {
+            li {
+                padding-left: 1em;
+                text-indent: -1em;
             }
         }
     }
