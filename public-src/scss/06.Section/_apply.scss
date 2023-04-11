@@ -37,8 +37,12 @@
         }
     }
     &__plan {
-        margin-top: 70px;
+        max-width: 800px;
+        margin: 70px auto 0;
         color: $color-white;
+        border: 4px solid $color-cream;
+        border-radius: 10px;
+        padding: 10px;
         @media #{$media-smp} {
             margin-top: 45px;
             padding: 10px;
@@ -57,14 +61,14 @@
             margin-top: 30px;
             display: flex;
             justify-content: center;
-            @media #{$media-smp} {
+            @media #{$media-tablet} {
                 flex-direction: column;
             }
         }
         .block {
             text-align: center;
             width: 30%;
-            @media #{$media-smp} {
+            @media #{$media-tablet} {
                 width: 100%;
                 &+.block {
                     margin-top: 30px;
