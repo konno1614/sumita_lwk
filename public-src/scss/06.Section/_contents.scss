@@ -1,0 +1,19 @@
+.s-contents {
+    position: relative;
+    @media #{$media-smp} {
+    }
+    &__block {
+        &+& {
+            margin-top: 70px;
+            @media #{$media-smp} {
+                margin-top: 45px;
+            }
+        }
+        .o-subtitle {
+            margin-bottom: 30px;
+            @media #{$media-smp} {
+                margin-bottom: 15px;
+            }
+        }
+    }
+}

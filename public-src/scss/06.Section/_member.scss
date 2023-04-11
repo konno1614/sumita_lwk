@@ -1,0 +1,79 @@
+.s-member {
+    @media #{$media-smp} {
+    }
+    &__inner {
+        position: relative;
+        max-width: 850px;
+        margin: 0 auto;
+        .hukidashi {
+            text-align: center;
+            @media #{$media-smp} {
+            }
+            &--01 {
+                margin-top: 50px;
+                @media #{$media-smp} {
+                    margin-top: 30px;
+                }
+            }
+            &--02 {
+                // margin-top: 20px;
+            }
+        }
+    }
+    &__navigator {
+        &+& {
+            margin-top: 80px;
+            @media #{$media-smp} {
+                margin-top: 30px;
+            }
+        }
+        .block {
+            margin-top: 30px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            &::after {
+                content: "";
+                display: block;
+                width: 31%;
+                @media #{$media-smp} {
+                    content: none;
+                }
+            }
+        }
+        .box {
+            width: 31%;
+            margin-bottom: 50px;
+            display: flex;flex-direction: column;
+            @media #{$media-smp} {
+                width: 48%;
+                margin-bottom: 30px;
+            }
+            .affiliation {
+                line-height: 1;
+                font-weight: $font-mideum;
+                margin-top: 10px;
+                @media #{$media-smp} {
+                    margin-top: 5px;
+                }
+            }
+            h3 {
+                line-height: 1;
+                font-size: 2.2rem;
+                font-weight: $font-bold;
+                margin-top: 15px;
+                @media #{$media-smp} {
+                    font-size: 2.0rem;
+                    margin-top: 10px;
+                }
+            }
+            p {
+                margin-top: 10px;
+                font-size: 1.4rem;
+                @media #{$media-smp} {
+                }
+            }
+        }
+    }
+}

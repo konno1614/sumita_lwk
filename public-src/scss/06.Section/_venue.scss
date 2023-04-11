@@ -1,0 +1,100 @@
+.s-venue {
+    @media #{$media-smp} {
+    }
+    &__flex {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @media #{$media-smp} {
+            margin-top: 15px;
+        }
+        .images {
+            width: 66%;
+            display: flex;
+            justify-content: space-between;
+            @media #{$media-smp} {
+                width: 48%;
+                flex-direction: column;
+            }
+            .left {
+                width: 48%;
+                @media #{$media-smp} {
+                    width: 100%;
+                }
+            }
+            .right {
+                width: 48%;
+                display: flex;
+                flex-direction: column;
+                @media #{$media-smp} {
+                    width: 100%;
+                    margin-top: 15px;
+                }
+                img {
+                    &+img {
+                        margin-top: auto;
+                        @media #{$media-smp} {
+                            margin-top: 15px;
+                        }
+                    }
+                }
+            }
+        }
+        .image {
+            width: 30%;
+            @media #{$media-smp} {
+                width: 48%;
+            }
+        }
+    }
+    &__access {
+        margin-top: 30px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        @media #{$media-smp} {
+            margin-top: 15px;
+            flex-direction: column;
+        }
+        .box {
+            width: 17%;
+            height: 65px;
+            border-radius: 5px;
+            border: 2px solid $color-green;
+            font-size: 1.8rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 1;
+            @media #{$media-smp} {
+                font-size: 1.6rem;
+                width: 100%;
+                height: 50px;
+            }
+        }
+        p {
+            position: relative;
+            top: 30px;
+            text-align: center;
+            width: 24.5%;
+            border-top: 2px solid $color-green;
+            @media #{$media-smp} {
+                width: 100%;
+                border-top: none;
+                top: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                font-size: 1.4rem;
+                &::before,&::after {
+                    content: "";
+                    display: block;
+                    width: 2px;
+                    height: 20px;
+                    background-color: $color-green;
+                }
+            }
+        }
+    }
+}

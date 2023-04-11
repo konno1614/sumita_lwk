@@ -81,7 +81,7 @@
         box-shadow: 0 3px 0 0 rgba($color: $color-black, $alpha: .3);
         &:hover {
             top: 3px;
-            box-shadow: 0 0px 0 0 rgba($color: $color-black, $alpha: .3);
+            box-shadow: 0 0 0 0 rgba($color: $color-black, $alpha: .3);
         }
         @media #{$media-smp} {
             margin: 0 auto;
@@ -89,37 +89,44 @@
     }
     &__contact {
         margin-top: 10px;
-        h3 {
-            font-size: 1.8rem;
-            font-weight: $font-mideum;
-        }
-        p {
-            margin-top: 5px;
+        .title {
+            color: $color-red;
             font-weight: $font-mideum;
         }
         a {
-            display: block;
+            display: inline-block;
             background-color: inherit;
             width: auto;
             height: auto;
-            color: $color-black;
+            color: $color-red;
+            font-weight: $font-mideum;
             box-shadow: unset;
             text-decoration: underline;
             word-break: break-all;
             &:hover {
                 top: auto;
                 box-shadow: unset;
-                color: $color-red;
+                color: $color-black;
             }
         }
     }
     .linkButton {
         width: 100%;
         height: auto;
-        padding: 5px;
+        padding: 10px 5px;
         max-width: 330px;
         text-align: center;
         margin-top: 10px;
         margin-bottom: 20px;
+        &::before {
+            content: "";
+            display: inline-block;
+            width: 28px;
+            height: 28px;
+            background-image: url(../img/apply/excel.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin-right: 10px;
+        }
     }
 }
