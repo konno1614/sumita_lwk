@@ -69,6 +69,7 @@
     }
     a {
         color: $color-red;
+        word-break: break-word;
         &:hover {
             text-decoration: underline;
         }
