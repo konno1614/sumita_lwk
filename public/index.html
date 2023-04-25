@@ -32,6 +32,7 @@
 	<link rel="stylesheet" href="./css/style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
 	<link rel="stylesheet" href="https://unpkg.com/scroll-hint@latest/css/scroll-hint.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplebar/6.2.4/simplebar.min.css" integrity="sha512-rptDreZF629VL73El0GaBEH9tlYEKDJFUr+ysb+9whgSGbwYfGGA61dVtQFL0qC8/SZv/EQFW5JtwEFf+8zKYg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<noscript><style>.noscript{display:block;}</style></noscript>
 </head>
 
@@ -74,7 +75,7 @@
 						<a href="#learning">学べること</a>
 					</li>
 					<li>
-						<a href="#overall">ツアー全体像</a>
+						<a href="#overall">プログラム全体像</a>
 					</li>
 					<li>
 						<a href="#member">メンバー</a>
@@ -98,19 +99,19 @@
 						<a href="#about">事業概要</a>
 					</li>
 					<li class="o-nav-sp__item">
-						<a href="#venue">ツアー開催地について</a>
+						<a href="#venue">プログラム開催地について</a>
 					</li>
 					<li class="o-nav-sp__item">
 						<a href="#sumita">「森林・林業日本一の町づくり」住田町</a>
 					</li>
 					<li class="o-nav-sp__item">
-						<a href="#overview">ツアーの概要</a>
+						<a href="#overview">プログラムの概要</a>
 					</li>
 					<li class="o-nav-sp__item">
 						<a href="#learning">学べること・得られること</a>
 					</li>
 					<li class="o-nav-sp__item">
-						<a href="#overall">ツアーの全体像</a>
+						<a href="#overall">プログラムの全体像</a>
 					</li>
 					<li class="o-nav-sp__item">
 						<a href="#contents">事前／事後研修の内容</a>
@@ -305,6 +306,9 @@
 						</table>
 					</div>
 				</div>
+				<p class="s-program__link js-fadein">
+					※詳細は「<a href="#overall">プログラムの全体像</a>」をご確認ください。
+				</p>
 				<div class="s-program__images js-fadein"></div>
 				<div class="s-program__iframe js-fadein">
 					<iframe width="560" height="315" src="https://www.youtube.com/embed/4KNs3hABKPE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -355,9 +359,23 @@
 						</td>
 					</tr>
 					<tr>
-						<th>研修費<br>旅費</th>
+						<th>研修プログラム参加費</th>
 						<td>
-							198,000円（税込）<br>（※旅費・域内移動費、宿泊費・⾷事代・保険料は別途）
+							198,000円（税込）<br>
+							<span class="asterisk">※宿泊費、域内交通費等を含む旅行代金は含まれません。詳細は下記<a href="#apply">【実施概要・申込方法】</a>をご確認ください。</span>
+						</td>
+					</tr>
+					<tr>
+						<th>研修プログラム企画・実施</th>
+						<td>
+							日本能率協会マネジメントセンター株式会社<br>
+							プログラム協力 おとりもち
+						</td>
+					</tr>
+					<tr>
+						<th>旅行企画・実施</th>
+						<td>
+							株式会社みちのりトラベル東北
 						</td>
 					</tr>
 				</table>
@@ -366,7 +384,7 @@
 		<section id="venue" class="o-section o-section--cream s-venue">
 			<div class="o-inner">
 				<h2 class="o-title o-title--black js-fadein">
-					ツアー開催地について
+					プログラム開催地について
 					<span>VENUE</span>
 				</h2>
 				<h3 class="o-subtitle o-subtitle--black js-fadein">住田町とは？</h3>
@@ -469,7 +487,7 @@
 		<section id="overview" class="o-section o-section--cream s-overview">
 			<div class="o-inner">
 				<h2 class="o-title o-title--black js-fadein">
-					ツアーの概要
+					プログラムの概要
 					<span>OVERVIEW</span>
 				</h2>
 				<div class="s-overview__block">
@@ -516,7 +534,7 @@
 		<section id="overall" class="o-section o-section--cream s-overall">
 			<div class="o-inner">
 				<h2 class="o-title o-title--black js-fadein">
-					ツアーの全体像
+					プログラムの全体像
 					<span>OVERALL</span>
 				</h2>
 				<div class="s-overall__flex js-fadein">
@@ -533,8 +551,8 @@
 					<div class="box box--center">
 						<h4>住田町での学び</h4>
 						<div class="period period--02">2023年7月5日～8日</div>
-						<ul class="s-overall__list">
-							<li class="s-overall__item">
+						<ul class="s-overall__list s-overall__list--scroll" data-simplebar data-simplebar-auto-hide="false">
+							<li class="s-overall__item s-overall__item">
 								<span class="bold">1日目<span class="green">【つながり】</span></span>
 								<table>
 									<tr>
@@ -591,7 +609,7 @@
 									</tr>
 								</table>
 							</li>
-							<li class="s-overall__item">
+							<li class="s-overall__item s-overall__item">
 								<span class="bold">2日目<span class="green">【存在意義を感じる】</span></span>
 								<table>
 									<tr>
@@ -631,7 +649,7 @@
 									</tr>
 								</table>
 							</li>
-							<li class="s-overall__item">
+							<li class="s-overall__item s-overall__item">
 								<span class="bold">3日目<span class="green">【⼈⽣の⽕種を灯す】</span></span>
 								<table>
 									<tr>
@@ -675,7 +693,7 @@
 									</tr>
 								</table>
 							</li>
-							<li class="s-overall__item">
+							<li class="s-overall__item s-overall__item">
 								<span class="bold">4日目</span>
 								<table>
 									<tr>
@@ -957,21 +975,6 @@
 					<span>HUB</span>
 				</h2>
 				<div class="s-hub__block js-fadein">
-					<h3 class="o-subtitle">宿泊場所</h3>
-					<div class="o-shadow s-hub__flex">
-						<div class="left">
-							<img src="./img/hub/image01.png" alt="宿泊場所">
-						</div>
-						<div class="right">
-							<h4>グリーンベル高勘</h4>
-							<p>
-								国道に面し、コンビニ・ドラッグストア・ホームセンターが徒歩圏内にあります。<br>
-								拠点となるまち家世田米駅までは徒歩10分ほどかかりますが、その道中は自然に囲まれた景色を堪能することが出来ます。
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="s-hub__block js-fadein">
 					<h3 class="o-subtitle">仕事場所</h3>
 					<div class="o-shadow s-hub__flex s-hub__flex--reverse">
 						<div class="left">
@@ -998,6 +1001,13 @@
 				</h2>
 				<table class="o-table js-fadein">
 					<tr>
+						<th>ご案内</th>
+						<td>
+							本越境学習プログラムは、日本能率協会マネジメントセンター（以下JMAM）が研修プログラムの企画・実施を行い、地域へ訪問するという性質上不可欠となる、旅行事業の開催・実施を旅行会社が行っております。<br>
+							同時開催とはなりますが、別プログラムとなる為、研修プログラムへのご参加お申込・契約締結はJMAMと、旅行へのお申込・契約は旅行会社へいただきます。（契約先・お支払先が2か所となります）
+						</td>
+					</tr>
+					<tr>
 						<th>定員</th>
 						<td>
 							<span class="accent">15名　最低催⾏：4⼈</span>
@@ -1012,14 +1022,16 @@
 						</td>
 					</tr>
 					<tr>
-						<th>料金</th>
+						<th>研修プログラム参加費</th>
 						<td>
-							研修費：198,000円（税込）<br>
-							旅費：00,000円<br>
-							（域内移動費、宿泊費・⾷事代・保険料は別途）<br>
-							<span class="asterisk">・料⾦内に含まれるものは、プログラム参加費(教材等込)となります。</span>
-							<span class="asterisk">・東北新幹線「⽔沢江刺駅」までの往復移動費は、各⾃ご負担となります。</span>
-							<span class="asterisk">・期間中の宿泊費・域内移動費・⾷事代、保険等は、別途負担となります。</span>
+							198,000円（税込）<br>
+							[研修プログラム参加費に含まれるもの]<br>
+							<span class="asterisk">・開催されるオンライン/現地プログラムへの参加</span>
+							<span class="asterisk">・教材（テキスト、レポート、学習の手引き、受講インフォメーション等）の送付</span>
+							<span class="asterisk">・ＪＭＡＭから提供するコミュニケーションツールの利用</span>
+							<span class="asterisk">・事務局への質問、参加に掛かる調整</span>
+							<span class="asterisk">※宿泊費、域内交通費等を含む旅行代金は含まれません。旅行のお申込は旅行会社へお願いいたします。（本ページ下方にてご紹介いたします）</span>
+							<span class="asterisk">※集合場所までの交通は各自お手配ください。</span>
 						</td>
 					</tr>
 					<tr>
@@ -1029,43 +1041,29 @@
 						</td>
 					</tr>
 					<tr>
-						<th>お申し込み</th>
+						<th>研修プログラム<br>お申し込み・お問い合わせ先</th>
 						<td>
-							<span class="accent">エクセルの申込書に記入いただき、メールにてご提出ください</span><br>
-							<a class="linkButton" href="#" target="_blank">申込書ダウンロード（エクセル）</a>
-							<div class="o-table__contact">
-								<div class="title">申込書を提出する</div>
-								<a href="mailto:e.tokusanai@michinoritravel-tohoku.jp" target="_blank">e.tokusanai@michinoritravel-tohoku.jp</a>
-							</div>
+							<span class="title">日本能率協会マネジメントセンター株式会社</span><br>
+							越境ラーニング事業部<br>
+							担当：山口<br>
+							メール：<a href="mailto:workation@jmam.co.jp?subject=ラーニングワーケーションin住田町2023に関するお問い合わせ" target="_blank">workation@jmam.co.jp</a><br>
+							お問い合わせフォーム：<a href="https://hatarakikata.design/global_contact/" target="_blank">https://hatarakikata.design/global_contact/</a><br>
+							担当より、お手続き方法について、ご連絡いたします。
+						</td>
+					</tr>
+					<tr>
+						<th>旅行<br>お申し込み・お問い合わせ</th>
+						<td>
+							<span class="title">株式会社みちのりトラベル東北</span><br>
+							■旅行の募集書面<br>
+							<a class="linkButton disabled" href="./pdf/Learning_Workation_SUMITA.pdf" target="_blank">coming soon</a><br>
+							■お問い合わせ<br>
+							メール：<a href="mailto:e.tokusanai@michinoritravel-tohoku.jp?subject=ラーニングワーケーションin住田町2023に関するお問い合わせ" target="_blank">e.tokusanai@michinoritravel-tohoku.jp</a><br>
+							担当：戸草内<br>
+							担当より、お手続き方法について、ご連絡いたします。
 						</td>
 					</tr>
 				</table>
-				<div class="s-apply__contact js-fadein">
-					<h3>お問い合わせ先</h3>
-					<h4>おとりもち</h4>
-					<div class="link">
-						Mail <a href="mailto:otorimochi64@gmail.com?subject=お問い合わせ&amp;body=ご記入ください">otorimochi64@gmail.com</a>
-					</div>
-				</div>
-				<div class="s-apply__plan js-fadein">
-					<h3>旅行企画・実施</h3>
-					<div class="title">日本能率協会マネジメントセンター<br class="nobr-pc">越境ラーニング事業部</div>
-					<div class="container">
-						<div class="block">
-							<h4>＜ラーニングワーケーションサイト＞</h4>
-							<a class="site" href="https://hatarakikata.design/" target="_blank">サイトへ</a>
-						</div>
-						<div class="block">
-							<h4>＜Webサイトからのお問い合せ＞</h4>
-							<a class="web" href="https://hatarakikata.design/global_contact/" target="_blank">お問い合わせ</a>
-						</div>
-						<div class="block">
-							<h4>＜メールでのお問い合せ＞</h4>
-							<a class="mail" href="mailto:workation&#64;jmam.co.jp?subject=ラーニングワーケーション＠岩⼿－住⽥町について" target="_blank">お問い合わせ</a>
-						</div>
-					</div>
-					<p class="caution">※外部サイトにつながります。</p>
-				</div>
 			</div>
 		</section>
 		<section id="jmam" class="o-section o-section--cream s-jmam">
@@ -1161,6 +1159,7 @@
 		</div>
 	</footer>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" defer></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/simplebar/6.2.4/simplebar.min.js" integrity="sha512-K//QeDiscFFAs5yljnbZCuoAmzv5KdtVY0W70WLQZ+BFCxi4PotspvxZwpaGJOao2l4oIQhgsHX5tHxyRe+YYw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js" defer></script>
 	<script src="https://unpkg.com/scroll-hint@latest/js/scroll-hint.min.js"></script>
 	<script src="./js/index.js" defer></script>

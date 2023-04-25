@@ -1,7 +1,5 @@
 .o-table {
     width: 100%;
-    // border-collapse: separate;
-    // border-spacing: 6px;
     font-size: 1.4rem;
     @media #{$media-smp} {
         border-collapse: collapse;
@@ -51,6 +49,10 @@
             padding-left: 1em;
             text-indent: -1em;
         }
+        &.title {
+            font-size: 1.6rem;
+            font-weight: $font-bold;
+        }
     }
     &--cream {
         th {
@@ -63,19 +65,26 @@
         }
         td {
             border-bottom: 6px solid $color-cream;
-            // border-right: 6px solid $color-cream;
         }
     }
     a {
+        color: $color-red;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    .linkButton {
         position: relative;
         top: 0;
-        display: flex;
+        display: inline-flex;
         align-items: center;
         justify-content: center;
+        margin: 10px 0 20px;
+        padding: 10px 20px;
         background-color: $color-red;
         border-radius: 30px;
-        width: 200px;
-        height: 50px;
+        text-align: center;
+        text-decoration: none;
         color: $color-white;
         font-weight: $font-bold;
         box-shadow: 0 3px 0 0 rgba($color: $color-black, $alpha: .3);
@@ -83,50 +92,19 @@
             top: 3px;
             box-shadow: 0 0 0 0 rgba($color: $color-black, $alpha: .3);
         }
-        @media #{$media-smp} {
-            margin: 0 auto;
-        }
-    }
-    &__contact {
-        margin-top: 10px;
-        .title {
-            color: $color-red;
-            font-weight: $font-mideum;
-        }
-        a {
-            display: inline-block;
-            background-color: inherit;
-            width: auto;
-            height: auto;
-            color: $color-red;
-            font-weight: $font-mideum;
-            box-shadow: unset;
-            text-decoration: underline;
-            word-break: break-all;
-            &:hover {
-                top: auto;
-                box-shadow: unset;
-                color: $color-black;
-            }
-        }
-    }
-    .linkButton {
-        width: 100%;
-        height: auto;
-        padding: 10px 5px;
-        max-width: 330px;
-        text-align: center;
-        margin-top: 10px;
-        margin-bottom: 20px;
         &::before {
             content: "";
             display: inline-block;
             width: 28px;
             height: 28px;
-            background-image: url(../img/apply/excel.svg);
+            background-image: url(../img/apply/pdf.svg);
             background-size: contain;
             background-repeat: no-repeat;
             margin-right: 10px;
+        }
+        &.disabled {
+            pointer-events: none;
+            opacity: .5;
         }
     }
 }

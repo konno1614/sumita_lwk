@@ -79,7 +79,32 @@
     }
     &__list {
         margin-top: 15px;
+        max-height: 300px;
+        overflow-y: scroll;
         @media #{$media-smp} {
+        }
+        &--scroll {
+            .s-overall__item {
+                margin-right: 10px;
+            }
+        }
+        // スクロールバー本体
+        .simplebar-scrollbar::before {
+            background: $color-cream;
+            border-radius: 5px;
+            width: 4px;
+            margin-left: 0px;
+            margin-top: 0px;
+        }
+        // スクロールバー本体の透明度（デフォルトだと透過しています）
+        .simplebar-scrollbar.simplebar-visible::before {
+            opacity: 1;
+        }
+        // スクロールバーの背景色(オレンジ色の部分)
+        .simplebar-track {
+            background-color: $color-brown;
+            border-radius: 5px;
+            width: 8px !important;
         }
     }
     &__item {
