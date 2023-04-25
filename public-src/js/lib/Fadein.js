@@ -4,7 +4,7 @@ $(function () {
       const scrollAmount = $(window).scrollTop();
       $('.js-fadein').each(function () {
           const targetPosition = $(this).offset().top;
-          if(scrollAmount > targetPosition - wHeight + 50) {
+          if(scrollAmount > targetPosition - wHeight + 25) {
               $(this).addClass("fadeInDown");
           }
       });
